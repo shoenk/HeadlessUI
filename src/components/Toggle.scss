@@ -1,0 +1,16 @@
+$on-color: #4caf50;
+$off-color: #ccc;
+
+.toggle-btn {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: $off-color;
+  transition: background-color 0.3s;
+
+  &.on {
+    background-color: $on-color;
+  }
+}

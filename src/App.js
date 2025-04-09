@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import useToggle from './hooks/useToggle';
+import Toggle from './components/Toggle';
+import './App.scss'; 
 
 function App() {
+  const { on, toggle } = useToggle();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h2>Headless Toggle </h2>
+      <Toggle on={on} toggle={toggle} />
+      <p>현재 상태: {on ? '활성화됨' : '비활성화됨'}</p>
     </div>
   );
 }
