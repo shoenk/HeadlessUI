@@ -8,9 +8,11 @@ function App() {
 
   return (
     <div className="app-container">
-      <h2>Headless Toggle </h2>
-      <Toggle on={on} toggle={toggle} />
-      <p>현재 상태: {on ? '활성화됨' : '비활성화됨'}</p>
+      <div className='app-box'>
+        <h2>Headless Toggle </h2>
+        <Toggle on={on} toggle={toggle} />
+        <p>현재 상태: {on ? 'ON' : 'OFF'}</p>
+      </div>
     </div>
   );
 }

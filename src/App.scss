@@ -1,5 +1,10 @@
 .app-container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid black;
     padding: 50px;
+    
   
     h2 {
       margin-bottom: 20px;
@@ -10,4 +15,9 @@
       margin-top: 20px;
       font-size: 16px;
     }
+  }
+
+  .app-box {
+    width: 200px;
+    margin: 0 auto;
   }
